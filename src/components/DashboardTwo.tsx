@@ -10,9 +10,9 @@ import Data from "../data/Data";
 import "../styles/DashboardStyle.css";
 import TinyLineChart from "./TinyLineChart";
 import bg from "../assets/bg.jpg";
-import Box from "../components/BoxDashboard";
+import Box from "./BoxDashboard";
 
-function Dashboard() {
+function DashboardTwo() {
   return (
     <div className="w-full grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-1">
       <div className="col-span-2 pt-8 px-10">
@@ -129,4 +129,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default DashboardTwo;

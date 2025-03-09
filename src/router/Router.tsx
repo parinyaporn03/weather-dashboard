@@ -1,19 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/Dashboard";
-import News from "../components/Home";
+import DashboardOne from "../components/DashboardOne";
+import DashboardTwo from "../components/DashboardTwo";
 import Sidebar from "../components/Sidebar";
 const Router = createBrowserRouter([
   {
-    path: "/",
+    path: "/weather-dashboard",
     element: <Sidebar />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        path: "dashboard-1",
+        element: <DashboardOne />,
       },
       {
-        path: "/news",
-        element: <News />,
+        path: "dashboard-2",
+        element: <DashboardTwo />,
       },
     ],
   },

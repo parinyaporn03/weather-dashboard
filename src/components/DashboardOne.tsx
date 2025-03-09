@@ -11,7 +11,7 @@ import "../styles/DashboardStyle.css";
 const pData = [1, 2, 3, 4];
 const xLabels = ["1AM", "2AM", "3AM", "4AM"];
 
-function News() {
+function DashboardOne() {
   return (
     <div className="w-full p-4 px-10">
       <Row className="items-center">
@@ -110,7 +110,7 @@ function News() {
         <div className="flex gap-4 ">
           <div className="shadow-xl p-4 rounded-xl border-2 bg-white lg:pr-20 w-full">
             <div className=" text-lg flex items-center ">
-              Feels like{" "}
+              Feels like
               <span>
                 <TbTemperature className="ml-2" />
               </span>
@@ -138,4 +138,4 @@ function News() {
   );
 }
 
-export default News;
+export default DashboardOne;
